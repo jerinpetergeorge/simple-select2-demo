@@ -1,0 +1,8 @@
+{% load static %}
+{{ form.media }} {% comment %} this is important since this loads the static files that are
+ required to render the Select2 widgets {% endcomment %}
+
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form>
