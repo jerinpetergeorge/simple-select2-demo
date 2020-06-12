@@ -1,0 +1,161 @@
+[
+  {
+    "model": "demo.publication",
+    "pk": 1,
+    "fields": {
+      "name": "OneZero"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 2,
+    "fields": {
+      "name": "elemental"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 3,
+    "fields": {
+      "name": "Towards DataScience"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 4,
+    "fields": {
+      "name": "Better Programming"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 5,
+    "fields": {
+      "name": "The Uber Confessionals"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 6,
+    "fields": {
+      "name": "Airbnb Engineering & Data Science"
+    }
+  },
+  {
+    "model": "demo.publication",
+    "pk": 7,
+    "fields": {
+      "name": "Forge"
+    }
+  },
+  {
+    "model": "demo.reporter",
+    "pk": 1,
+    "fields": {
+      "full_name": "Oscar Schwartz",
+      "email": "oscarschwartz@test.com"
+    }
+  },
+  {
+    "model": "demo.reporter",
+    "pk": 2,
+    "fields": {
+      "full_name": "Simon Pitt",
+      "email": "simonpitt@test.com"
+    }
+  },
+  {
+    "model": "demo.reporter",
+    "pk": 3,
+    "fields": {
+      "full_name": "Christoffer",
+      "email": "christoffer@test.com"
+    }
+  },
+  {
+    "model": "demo.reporter",
+    "pk": 4,
+    "fields": {
+      "full_name": "Maxine Carr",
+      "email": "maxine.carr@example.com"
+    }
+  },
+  {
+    "model": "demo.reporter",
+    "pk": 5,
+    "fields": {
+      "full_name": "Lola Petit",
+      "email": "lola.petit@example.com"
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 1,
+    "fields": {
+      "headline": "A Deadly Mosquito-Borne Illness Is Brewing in the Northeast",
+      "pub_date": "2020-06-12",
+      "reporter": 1,
+      "publications": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 2,
+    "fields": {
+      "headline": "What If an Algorithm Could Predict Your Unborn Child\u2019s Intelligence?",
+      "pub_date": "2020-06-12",
+      "reporter": 1,
+      "publications": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 3,
+    "fields": {
+      "headline": "What a Bad \u2018Sonic the Hedgehog\u2019 Tweet Teaches Us About Black Lives Matter Twitter Activism",
+      "pub_date": "2020-06-12",
+      "reporter": 2,
+      "publications": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 4,
+    "fields": {
+      "headline": "Computer Files Are Going Extinct",
+      "pub_date": "2020-06-08",
+      "reporter": 2,
+      "publications": []
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 5,
+    "fields": {
+      "headline": "Read This Before You Fly Anywhere",
+      "pub_date": "2020-04-08",
+      "reporter": 3,
+      "publications": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "demo.article",
+    "pk": 6,
+    "fields": {
+      "headline": "Misplaced Anger: Why You Have It, What to Do About It",
+      "pub_date": "2020-06-02",
+      "reporter": 2,
+      "publications": [
+        2
+      ]
+    }
+  }
+]
