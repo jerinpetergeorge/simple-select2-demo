@@ -7,6 +7,8 @@ This is a minimal example which shows how to use the [**`django-simple-select2`*
 2. create a virtual environment, activate it and install the requirements
 3. apply the migrations: **`python manage.py migrate`**
 4. load seed data: **`python manage.py loaddata select2-seed-data.json`**
+5. create a superuser to access Django admin: **`python manage.py createsuperuser`**
+6. run the application: **`python manage.py runserver`**
 
 There you are!!!
 
