@@ -5,7 +5,7 @@ This is a minimal example which shows how to use the [**`django-simple-select2`*
 ## How to
 1. clone the repository
 2. create virtual environment, activate it and install the requirements
-3. apply the migrations **`python manage.py migrations`**
+3. apply the migrations **`python manage.py migrate`**
 4. load seed data **`python manage.py loaddata select2-seed-data.json`**
 
 There you are!!!
