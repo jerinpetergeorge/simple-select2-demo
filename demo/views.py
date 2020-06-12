@@ -1,3 +1,4 @@
+from django.urls import reverse
 from simple_select2 import AutoCompleteBaseView
 from django.views import generic
 from .models import Reporter, Publication, Article
@@ -18,3 +19,6 @@ class ArticleCreateSelect2View(generic.CreateView):
     model = Article
     form_class = Select2ArticleModelForm
     template_name = 'demo/article_create.html'
+
+    def get_success_url(self):
+        return reverse('article-create-view')

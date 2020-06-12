@@ -9,5 +9,6 @@ class Select2ArticleModelForm(forms.ModelForm):
         fields = '__all__'
         widgets = {
             'publications': AutoCompleteSelect2Multiple(url='select2-publication-list'),
-            'reporter': AutoCompleteSelect2(url='select2-reporter-list')
+            'reporter': AutoCompleteSelect2(url='select2-reporter-list'),
+            'pub_date': forms.SelectDateWidget
         }
