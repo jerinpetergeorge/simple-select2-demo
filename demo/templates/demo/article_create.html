@@ -1,8 +1,19 @@
 {% load static %}
-{{ form.media }} {% comment %} this is important since this loads the static files that are
- required to render the Select2 widgets {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Article</title>
 
-<form method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form>
+    {{ form.media }} {% comment %} this is important since this loads the
+                                   static files that are required to render
+                                   the Select2 widgets {% endcomment %}
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
