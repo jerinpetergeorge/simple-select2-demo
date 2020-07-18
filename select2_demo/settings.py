@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'simple_select2',  # for bootstrap4 theme assets to be found
+    'crispy_forms',
     'demo',
 ]
 
@@ -120,3 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Aesthetics
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+SIMPLE_SELECT2_THEME = 'bootstrap4'
+SIMPLE_SELECT2_WIDTH = '100%'
